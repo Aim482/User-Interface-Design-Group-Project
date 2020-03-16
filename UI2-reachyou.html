@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<head>
+  <title>Prime Services Repairs</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="main2.css" rel="stylesheet">
+  <title>Prime Services Registration</title>
+
+</head>
+<body>
+<script>
+ function myFunction1() {
+  location.replace("UI2.html")
+}
+
+function myFunction2() {
+  location.replace("UI2-account.html")
+}
+
+function myFunction3() {
+  location.replace("UI2-reachyou.html")
+}
+</script>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img  src="wrench-logo.png" class="mr-3 mt-3 rounded-circle" style="width:60px;"></a>
+   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Services <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Staff<span class="sr-only">(current)</span></a>
+      </li>
+     </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Customer Login <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="#">Register <span class="sr-only">(current)</span></a>
+    </li>
+ <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</ul>
+      
+    </form>
+    </div>
+
+
+
+
+  </nav>
+
+  <br>
+  <br>
+
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+  <div class="col-12">
+  <h2>Registration</h2>
+</div>
+</div>
+</div>
+
+
+<br>
+<div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div class="col-12">
+<div class="btn-group col-md-4">
+  
+        <button type="button" class="btn btn-outline-primary" onclick="myFunction1()">Personal Info</button>
+  <button type="button" class="btn btn-outline-primary" onclick="myFunction2()">Account</button>
+  <button type="button" class="btn btn-outline-primary" onclick="myFunction3()">Reach You</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+            <form class="form-reg tab-content" role="form">
+             <fieldset class="tab-pane fade show active" id="reach-you">  
+               <h2>Reach You</h2>
+      <div>
+        <div class="form-group">
+          <label for="postalcode"></label>
+          <div class="col-sm-9">
+          <input type="postalcode" name="postalcode" id="postalcode" placeholder="PostalCode" class="form-control" required />
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="form-group">
+                    <label for="phoneType" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="text" id="phoneType" placeholder="Phone Type" class="form-control" autofocus>
+                    </div>
+                </div>
+
+      <div class="form-group">
+                    <label for="phoneNumber" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="text" id="phoneNumber" placeholder="Phone Number" class="form-control" autofocus>
+                    </div>
+                </div>
+
+        <div class="form-group">
+                    <label for="securityQuestion" class="col-sm-3 control-label">Security Question</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="securityQuestion" placeholder="Security Question" class="form-control" autofocus>
+                    </div>
+                </div>
+
+      <div class="form-group">
+                    <label for="answer" class="col-sm-3 control-label">Answer</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="answer" placeholder="Answer" class="form-control" autofocus>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Previous" onclick="myFunction2()">Previous</button>
+                <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Submit">Submit</button>
+                </fieldset>
+
+          </form>
+
+
+<br>
+        </div>
+
+<br>
+<hr>
+        <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="profile-pic.png" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+          <hr class="light">
+          <p>555-555-5555</p>
+          <p>email@yemail.com</p>
+          <p>100 Street Name</p>
+          <p>City, State, 00000</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="profile-pic.png" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+          <hr class="light">
+          <p>555-555-5555</p>
+          <p>email@yemail.com</p>
+          <p>100 Street Name</p>
+          <p>City, State, 00000</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="profile-pic.png" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+          <hr class="light">
+          <p>555-555-5555</p>
+          <p>email@yemail.com</p>
+          <p>100 Street Name</p>
+          <p>City, State, 00000</p>
+        </div>
+
+        <div class="col-12">
+          <hr class="light">
+          <h5>&copy; PrimeServices.com</h5>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+
+</body>
