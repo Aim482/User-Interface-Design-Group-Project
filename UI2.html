@@ -15,6 +15,21 @@
 <body>
 
 
+<script>
+
+  function myFunction1() {
+  location.replace("UI2.html")
+}
+
+function myFunction2() {
+  location.replace("UI2-account.html")
+}
+
+function myFunction3() {
+  location.replace("UI2-reachyou.html")
+}
+</script>
+
 
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#"><img  src="wrench-logo.png" class="mr-3 mt-3 rounded-circle" style="width:60px;"></a>
@@ -69,32 +84,36 @@
 		<div class="col-12">
 <div class="btn-group col-md-4">
 	
-				<button type="button" class="btn btn-outline-primary"><a href="#you" class="nav-link active" data-toggle="tab">Personal Info</a></button>
-  <button type="button" class="btn btn-outline-primary"><a href="#account" class="nav-link active" data-toggle="tab">Account</a></button>
-  <button type="button" class="btn btn-outline-primary"> <a href="#reach-you" class="nav-link active" data-toggle="tab">Reach You</a></button>
+				<button type="button" class="btn btn-outline-primary" onclick="myFunction1()">Personal Info</button>
+  <button type="button" class="btn btn-outline-primary" onclick="myFunction2()">Account</button>
+  <button type="button" class="btn btn-outline-primary" onclick="myFunction3()"> Reach You</button>
 			</div>
 		</div>
 	</div>
 </div>
+
+<!-- <button type="button" class="btn btn-outline-primary" onclick="myFunction1()"><a href="you" class="nav-link active" data-toggle="tab">Personal Info</a></button>
+  <button type="button" class="btn btn-outline-primary" onclick="myFunction2()"><a href="account" class="nav-link active" data-toggle="tab">Account</a></button>
+  <button type="button" class="btn btn-outline-primary" onclick="myFunction3()"> <a href="#reach-you" class="nav-link active" data-toggle="tab">Reach You</a></button>-->
 <div class="container">
 
             <form class="form-reg tab-content" role="form">
             	<fieldset class="tab-pane fade show active" id="you">
                 <h2>Personal Info</h2>
                 <div class="form-group">
-                    <label for="firstName" class="col-sm-3 control-label"><!--First Name--></label>
+                    <label for="firstName" class="col-sm-3 control-label"></label>
                     <div class="col-sm-12">
                         <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
                     </div>
                 </div>
                   <div class="form-group">
-                    <label for="middleName" class="col-sm-3 control-label"><!--Middle Name--></label>
+                    <label for="middleName" class="col-sm-3 control-label"></label>
                     <div class="col-sm-12">
                         <input type="text" id="middleName" placeholder="Middle Name" class="form-control" autofocus>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="lastName" class="col-sm-3 control-label"><!--Last Name--></label>
+                    <label for="lastName" class="col-sm-3 control-label"></label>
                     <div class="col-sm-12">
                         <input type="text" id="lastName" placeholder="Last Name" class="form-control" autofocus>
                     </div>
@@ -105,65 +124,52 @@
 							
 						<label for="gender">Gender:</label>
 						
-						<!--<div class="form-select"> <div class="col-sm-9">-->
+						
 						<select name="gender" id="gender">
-						<!--<option value=""></option>-->
+					
 						<option value="male">Male</option>
 						<option value="female">Female</option>
 						<option value="other">Other</option>
 						</select>
 						<span class="select-icon"><i class="zmdi zmdi-gneder-down"></i></span>
 					
-				<!--</div>
-						</div>-->
+			
 						</div>
 
-                <!-- <div class="col-lg-6">
-						<div class="form-group">
-						<label for="state">State :</label>
-						<div class="form-select">
-						<select name="state" id="state">
-						<option value=""></option>
-						<option value="us">America</option>
-						<option value="uk">English</option>
-						</select>
-						<span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-						</div>
-					</div>
-				</div> -->
+               
 
 				</div>
 
-				<button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
-				<br>
+				<button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next" onclick="myFunction2()">Next</button>
+			
 				</fieldset>
 
 
 
-				<fieldset class="tab-pane" id="account">
+				<!--<fieldset class="tab-pane" id="account">
 						 <div class="form-group">
-                    <label for="username" class="col-sm-3 control-label"><!--Username--> </label>
+                    <label for="username" class="col-sm-3 control-label"></label>
                     <div class="col-sm-9">
                         <input type="username" id="username" placeholder="Username" class="form-control" name= "username">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="password" class="col-sm-3 control-label"><!--Password--> </label>
+                    <label for="password" class="col-sm-3 control-label"></label>
                     <div class="col-sm-9">
                         <input type="password" id="password" placeholder="Password" class="form-control" name= "password" data-toggle="tooltip" data-placement="bottom" title="Password must be at least 8 characters long">
                     </div>
                 </div>
 				
 				 <div class="form-group">
-                    <label for="email" class="col-sm-3 control-label"><!--Email--> </label>
+                    <label for="email" class="col-sm-3 control-label"></label>
                     <div class="col-sm-9">
                         <input type="email" id="email" placeholder="Example@email.com" class="form-control" name= "email">
                     </div>
                 </div>
 
                 <div class="form-group">
-					<label for="address"><!--Address--></label>
+					<label for="address"></label>
 					<div class="col-sm-9">
 					<input type="address" name="address" id="address" placeholder="Address" class="form-control" required />
 				</div>
@@ -173,20 +179,20 @@
 			<div class="form-row">
 				<div class="form-group  col-sm-2">
 					<label for="city">City :</label>
-					<!--<div class="form-select">-->
+					
 					<select name="city" id="city">
 					<option value="newyork">New York</option>
 					<option value="newjersey">New Jersey</option>
 					<option value="conneticut">Conneticut</option>
 					</select>
 					<span class="select-icon"><i class="zmdi zmdi-city-down"></i></span>
-					<!--</div>-->
+					
 					</div>
 					
 				<div class="col-lg-6">
 					<div class="form-group">
 					<label for="country">Country :</label>
-					<!--<div class="form-select">-->
+					
 					<select name="country" id="country">
 					<option value="newyork">USA</option>
 					<option value="losangeles">Barbados</option>
@@ -194,18 +200,19 @@
 					</select>
 					<span class="select-icon"><i class="zmdi zmdi-country-down"></i></span>
 					</div>
-				<!--</div>
-				</div>-->
+				
 				</div>	
 				</div>
 
+				<button class="btn btn-primary ml-auto js-btn-next" type="button" title="Previous">Previous</button>
 				<button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+
 				</fieldset>
 
 				<fieldset class="tab-pane fade" id="reach-you">	
 			<div>
 				<div class="form-group">
-					<label for="postalcode"><!--Postal Code--></label>
+					<label for="postalcode"></label>
 					<div class="col-sm-9">
 					<input type="postalcode" name="postalcode" id="postalcode" placeholder="PostalCode" class="form-control" required />
 				</div>
@@ -215,14 +222,14 @@
 
 
 			<div class="form-group">
-                    <label for="phoneType" class="col-sm-3 control-label"><!--Phone Type--></label>
+                    <label for="phoneType" class="col-sm-3 control-label"></label>
                     <div class="col-sm-9">
                         <input type="text" id="phoneType" placeholder="Phone Type" class="form-control" autofocus>
                     </div>
                 </div>
 
 			<div class="form-group">
-                    <label for="phoneNumber" class="col-sm-3 control-label"><!--Phone Number--></label>
+                    <label for="phoneNumber" class="col-sm-3 control-label"></label>
                     <div class="col-sm-9">
                         <input type="text" id="phoneNumber" placeholder="Phone Number" class="form-control" autofocus>
                     </div>
@@ -242,13 +249,15 @@
                     </div>
                 </div>
 
-                <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
-                </fieldset>
+                <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Previous">Previous</button>
+                <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Submit">Submit</button>
+                </fieldset> -->
 
-                <!--</div>-->
+               
             </form>
 
 
+<br>
         </div>
 
 <br>
