@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700')
 
-html, body
+  body
 {
 	height: 100%;
 	width: 100%;
 	font-family: 'Poppins', sans-serif;
-	color: #222;
+	
+	 background-color: #495057;  
 }
 
+.container-fluid{
+	color: black;
+}
 
 .container{
 
@@ -31,13 +35,13 @@ width: 100%
 
 }
 
-/*#form-reg, fieldset:not(:first-of-type) {
+
+
+#form-reg, fieldset:not(:first-of-type) {
     display: none;
-}*/
-
-
-.btn-group{
-
-	
-
 }
+
+footer{
+ color: black;
+}
+
